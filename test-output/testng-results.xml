@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31221" started-at="2019-03-29T13:18:24Z" finished-at="2019-03-29T13:18:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31221" started-at="2019-03-29T13:18:24Z" finished-at="2019-03-29T13:18:55Z">
+      <class name="com.sntf.steps.Product_Purchase">
+        <test-method status="PASS" signature="Openbrowser_and_hit_url()[pri:0, instance:com.sntf.steps.Product_Purchase@46daef40]" name="Openbrowser_and_hit_url" is-config="true" duration-ms="16138" started-at="2019-03-29T18:48:24Z" finished-at="2019-03-29T18:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openbrowser_and_hit_url -->
+        <test-method status="PASS" signature="Wipeup()[pri:0, instance:com.sntf.steps.Product_Purchase@46daef40]" name="Wipeup" duration-ms="14795" started-at="2019-03-29T18:48:40Z" finished-at="2019-03-29T18:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Wipeup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sntf.steps.Product_Purchase@46daef40]" name="tearDown" is-config="true" duration-ms="273" started-at="2019-03-29T18:48:55Z" finished-at="2019-03-29T18:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sntf.steps.Product_Purchase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
