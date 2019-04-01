@@ -29,6 +29,11 @@ public class DatabaseTesting {
 	public static String Created_date;
 	public static int Isverified = 1;
 	
+	String Select_Query = "Select * from users WHERE email = '"+email+"'";
+	String Insert_Query = "INSERT INTO users (user_type, first_name, last_name, email, password, created_at, updated_at) values(?,?,?,?,?,?,?)";
+	String Update_Query = " UPDATE users SET first_name = 'Manoj', last_name ='"+lname+"', verified ="+Isverified+" WHERE email = '"+email+"';";
+	String Delete_Query = "DELETE FROM users WHERE email = '"+email+"';";
+	
 	@BeforeTest
 	     public static void Connect_Database() throws SQLException, ClassNotFoundException {	
 			String dbURL = "jdbc:mysql://10.2.1.64:3306/alpha_sntf";
@@ -54,7 +59,7 @@ public class DatabaseTesting {
 		@Test (priority =1)
 	     public void Insert_Query() throws SQLException, UnsupportedEncodingException {
 			
-			ResultSet rs=  stm.executeQuery("Select * from users WHERE email = 'rajiv.mynapatti+116@indianic.com'");
+			ResultSet rs=  stm.executeQuery(Select_Query);
 			//System.out.println(rs.first());
 			
 			if(rs.first()==false) {
@@ -71,7 +76,7 @@ public class DatabaseTesting {
 				
 				// create the mysql insert preparedstatement
 				
-				PreparedStatement preparedStmt = con.prepareStatement("INSERT INTO users (user_type, first_name, last_name, email, password, created_at, updated_at) values(?,?,?,?,?,?,?)");
+				PreparedStatement preparedStmt = con.prepareStatement(Insert_Query);
 				
 				preparedStmt.setString(1, usertype); //setString means it will add the usertype in the user_type column 
 				
@@ -101,7 +106,7 @@ public class DatabaseTesting {
 				
 			// Now execute the query
 
-					ResultSet rs=  stm.executeQuery("Select * from users WHERE email = '"+email+"'");
+					ResultSet rs=  stm.executeQuery(Select_Query);
 						
 						// Iterate the resultset now
 
@@ -125,7 +130,7 @@ public class DatabaseTesting {
 		@Test(priority = 3)
 		 public void Update_query () throws SQLException {
 			
-			PreparedStatement preparedStmt = con.prepareStatement(" UPDATE users SET first_name = 'Manoj', last_name ='"+lname+"', verified ="+Isverified+" WHERE email = '"+email+"';");
+			PreparedStatement preparedStmt = con.prepareStatement(Update_Query);
 			
 			preparedStmt.execute();
 			
@@ -140,7 +145,7 @@ public class DatabaseTesting {
 		@Test (priority = 4)
 		 public void Delete_query() throws SQLException {
 			
-			PreparedStatement preparedStmt = con.prepareStatement("DELETE FROM users WHERE email = '"+email+"';");
+			PreparedStatement preparedStmt = con.prepareStatement(Delete_Query);
 			
 			preparedStmt.execute();
 			
