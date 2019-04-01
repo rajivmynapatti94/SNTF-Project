@@ -145,9 +145,6 @@ public class DatabaseTesting {
 			preparedStmt.execute();
 			
 			System.out.println("Delete Query has been executed successfully");
-			
-			
-			
 		}
 		
 	   @AfterTest
