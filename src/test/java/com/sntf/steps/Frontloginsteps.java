@@ -40,14 +40,7 @@ WebDriver driver;
 			// Call the method
 			loginpage.valid_login_sntf(properties.getUserName(), properties.getUserPassword());
 			
-			String asB64 = Base64.getEncoder().encodeToString(properties.getUserPassword().getBytes("utf-8"));
-			System.out.println("Encrypted password is "+asB64);
 			
-			byte[] asBytes = Base64.getDecoder().decode(asB64);
-			System.out.println(new String(asBytes, "utf-8"));
-			
-			
-	
 		}
 	
 		@Test(priority=3)
