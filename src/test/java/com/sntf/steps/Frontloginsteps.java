@@ -54,7 +54,7 @@ WebDriver driver;
 		public void invalid_Password()
 		{
 			FrontloginScreen loginpage=PageFactory.initElements(driver, FrontloginScreen.class);
-			loginpage.invalid_password_login_sntf();;
+			loginpage.invalid_password_login_sntf();
 		}
 	
 		@Test(priority=1)
