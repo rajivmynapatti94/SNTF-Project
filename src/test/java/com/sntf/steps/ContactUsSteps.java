@@ -18,7 +18,7 @@ public class ContactUsSteps {
 	
 	public void Contactform() throws AWTException, InterruptedException, IOException {
 		
-		WebDriver driver=SharedBrowser.Browser(properties.getfronturl()+"/contactus");
+		WebDriver driver=SharedBrowser.Browser(properties.getfronturl()+"contactus");
 		
 		
 		ContactUsScreen contact = PageFactory.initElements(driver, ContactUsScreen.class);
