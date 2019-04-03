@@ -4,10 +4,8 @@
   <test thread-count="1" name="Regression Test" >
     <classes>
       <class name="com.sntf.steps.Product_Purchase"/>
+      <class name="com.sntf.steps.Frontloginsteps"/>
       <class name="com.sntf.steps.DatabaseTesting"/>
-        <class name="com.sntf.steps.Frontloginsteps"/>
-        
-      
-    </classes>
+     </classes>
  </test>
 </suite>
