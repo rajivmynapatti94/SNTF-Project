@@ -39,8 +39,6 @@ WebDriver driver;
  
 			// Call the method
 			loginpage.valid_login_sntf(properties.getUserName(), properties.getUserPassword());
-			
-			
 		}
 	
 		@Test(priority=3)
