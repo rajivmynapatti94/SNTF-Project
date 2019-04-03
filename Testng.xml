@@ -1,9 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Website testing" verbose="1" >
   <test name="Regression" >
     <classes>
       <class name="Product_Purchase"/>
       <class name="DatabaseTesting"/>
+       <class name="ContactUsSteps"/>
+        <class name="Frontloginsteps"/>
+         <class name="Waitlist_steps"/>
       
     </classes>
  </test>
