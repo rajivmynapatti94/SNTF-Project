@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Website testing]">
-  <test name="Regression Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.sntf.steps.ContactUsSteps">
+      <class name="com.sntf.steps.Product_Purchase">
         <methods>
-          <include name="Contactform"/>
-        </methods>
-      </class> <!-- com.sntf.steps.ContactUsSteps -->
-      <class name="com.sntf.steps.Waitlist_steps">
-        <methods>
+          <include name="Wipeup"/>
           <include name="Openbrowser_and_hit_url"/>
           <include name="tearDown"/>
-          <include name="ValidationChecker"/>
         </methods>
-      </class> <!-- com.sntf.steps.Waitlist_steps -->
+      </class> <!-- com.sntf.steps.Product_Purchase -->
     </classes>
-  </test> <!-- Regression Test(failed) -->
-</suite> <!-- Failed suite [Website testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

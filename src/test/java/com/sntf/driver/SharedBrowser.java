@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import javax.imageio.ImageIO;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -23,6 +25,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
 import com.sntf.driver.SharedProperties;
 
 public class SharedBrowser{  
@@ -149,8 +155,8 @@ public class SharedBrowser{
 		
 	}
 	
-	public static void capture(String testCaseName, WebDriver driver) {
-		    // Cast driver object to TakesScreenshot
+	public static void capture(String testCaseName, WebDriver driver) throws IOException {
+		  /*  // Cast driver object to TakesScreenshot
 		    TakesScreenshot screenshot = (TakesScreenshot) driver;
 		    // Get the screenshot as an image File
 		    File src = screenshot.getScreenshotAs(OutputType.FILE);
@@ -161,7 +167,10 @@ public class SharedBrowser{
 		      FileUtils.copyFile(src, dest);
 		    } catch (IOException ex) {
 		      System.out.println(ex.getMessage());
-		    }
+		    }*/
+		
+		Screenshot fpScreenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+	     ImageIO.write(fpScreenshot.getImage(),"PNG",new File(System.getProperty("user.dir")+"/target/Screenshots/" + testCaseName + "_" + timestamp() + ".png"));
 		  }
 	
 	public static String timestamp() {

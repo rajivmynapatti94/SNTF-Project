@@ -26,9 +26,11 @@ public static String Password = "indianic";
 	WebDriver driver;
 		
 			@BeforeMethod
-			public void Openbrowser_and_hit_url() throws IOException
+			public void Openbrowser_and_hit_url() throws IOException, InterruptedException
 			{
 				driver=SharedBrowser.Browser(properties.getfronturl()+"products");
+				Thread.sleep(2000);
+				SharedBrowser.capture("A_Product_Page1", driver);
 			}
 
 			@AfterMethod
@@ -38,13 +40,13 @@ public static String Password = "indianic";
 			}
 			
 			@Test
-			public void Wipeup() throws InterruptedException {
+			public void Wipeup() throws InterruptedException, IOException {
 			
 				driver.findElement(By.cssSelector(".search-toggle-btn")).click();
 				
 				SharedBrowser.globalSearchAndClickOnResult("hockey", SelectProduct);
 				
-				SharedBrowser.capture("A_Product_Page", driver);
+				SharedBrowser.capture("A_Product_Page2", driver);
 
 			//User will now navigate to Product Description Page
 				WebElement prodDescription = (new WebDriverWait(driver, 10))
@@ -96,8 +98,6 @@ public static String Password = "indianic";
 				SharedBrowser.capture("C_Empty_Cart_Page", driver);
 				
 				
-				
-			
 				}
 
 	}

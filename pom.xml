@@ -317,7 +317,12 @@
     <version>5.1.2.RELEASE</version>
 </dependency>
 
-
+<!-- Below dependency is for capturing the full page screenshot -->
+<dependency>
+    <groupId>ru.yandex.qatools.ashot</groupId>
+    <artifactId>ashot</artifactId>
+    <version>1.5.4</version>
+</dependency>
 
 
 
