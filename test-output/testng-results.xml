@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="601" started-at="2019-05-31T14:59:59Z" finished-at="2019-05-31T15:00:00Z">
+  <suite name="Default suite" duration-ms="655" started-at="2019-06-03T07:08:01Z" finished-at="2019-06-03T07:08:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="601" started-at="2019-05-31T14:59:59Z" finished-at="2019-05-31T15:00:00Z">
-      <class name="com.sntf.steps.BARCodeReader">
-        <test-method status="PASS" signature="MultipleBarCodeReader()[pri:0, instance:com.sntf.steps.BARCodeReader@74ad1f1f]" name="MultipleBarCodeReader" duration-ms="565" started-at="2019-05-31T20:29:59Z" finished-at="2019-05-31T20:30:00Z">
+    <test name="Default test" duration-ms="655" started-at="2019-06-03T07:08:01Z" finished-at="2019-06-03T07:08:02Z">
+      <class name="com.sntf.steps.ReadQRCode">
+        <test-method status="PASS" signature="SingleQRReader()[pri:1, instance:com.sntf.steps.ReadQRCode@4eb7f003]" name="SingleQRReader" duration-ms="553" started-at="2019-06-03T12:38:01Z" finished-at="2019-06-03T12:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MultipleBarCodeReader -->
-        <test-method status="PASS" signature="SingleBarCodeReader()[pri:0, instance:com.sntf.steps.BARCodeReader@74ad1f1f]" name="SingleBarCodeReader" duration-ms="14" started-at="2019-05-31T20:30:00Z" finished-at="2019-05-31T20:30:00Z">
+        </test-method> <!-- SingleQRReader -->
+        <test-method status="PASS" signature="MultipleQRReader()[pri:2, instance:com.sntf.steps.ReadQRCode@4eb7f003]" name="MultipleQRReader" duration-ms="81" started-at="2019-06-03T12:38:02Z" finished-at="2019-06-03T12:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SingleBarCodeReader -->
-      </class> <!-- com.sntf.steps.BARCodeReader -->
+        </test-method> <!-- MultipleQRReader -->
+      </class> <!-- com.sntf.steps.ReadQRCode -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
