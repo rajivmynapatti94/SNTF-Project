@@ -1,16 +1,21 @@
 package com.sntf.steps;
 
-import com.google.zxing.*;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
-import com.google.zxing.common.HybridBinarizer;
-import javax.imageio.ImageIO;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageFilter;
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
+
+import javax.imageio.ImageIO;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.LuminanceSource;
+import com.google.zxing.MultiFormatReader;
+import com.google.zxing.NotFoundException;
+import com.google.zxing.Result;
+import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
 
 public class ReadQRCode {
 
