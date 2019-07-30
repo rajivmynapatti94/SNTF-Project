@@ -38,20 +38,20 @@ public class SharedBrowser{
 	static SharedProperties properties = new SharedProperties();
 	
 
-	public static WebDriver Browser(String URL) throws IOException {
+	public void Browser(String URL) throws IOException {
 
 		if(properties.getbrowserName().equalsIgnoreCase("Chrome")) {
-			/*driver = new ChromeDriver();
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");*/
-			
+	
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 		else if(properties.getbrowserName().equalsIgnoreCase("Firefox")){
+			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		else if(properties.getbrowserName().equalsIgnoreCase("IE")) {
+		
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
@@ -60,7 +60,7 @@ public class SharedBrowser{
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		return driver;
+		//return driver;
 }
 	
 	public static void singleOptionSelectionDropdownHandle(String Elementid , String SearchedData) {

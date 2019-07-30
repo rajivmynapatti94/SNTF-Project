@@ -1,9 +1,7 @@
 package com.sntf.steps;
 
 import java.io.IOException;
-import java.util.Base64;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,16 +11,15 @@ import com.sntf.driver.SharedBrowser;
 import com.sntf.driver.SharedProperties;
 import com.sntf.screens.FrontloginScreen;
 
-public class Frontloginsteps {
+public class Frontloginsteps extends SharedBrowser {
 
 static SharedProperties properties = new SharedProperties();
-	
-WebDriver driver;
+
 	
 		@BeforeMethod
 		public void Openbrowser_and_hit_url() throws IOException
 		{
-			driver=SharedBrowser.Browser(properties.getfronturl()+"login");
+			Browser(properties.getfronturl()+"login");
 		}
 
 		@AfterMethod

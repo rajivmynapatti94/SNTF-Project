@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="631" started-at="2019-06-03T11:21:06Z" finished-at="2019-06-03T11:21:07Z">
+  <suite name="Default suite" duration-ms="47729" started-at="2019-07-30T12:56:17Z" finished-at="2019-07-30T12:57:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="631" started-at="2019-06-03T11:21:06Z" finished-at="2019-06-03T11:21:07Z">
-      <class name="com.sntf.steps.ReadQRCode">
-        <test-method status="PASS" signature="SingleQRReader()[pri:1, instance:com.sntf.steps.ReadQRCode@4eb7f003]" name="SingleQRReader" duration-ms="534" started-at="2019-06-03T16:51:06Z" finished-at="2019-06-03T16:51:07Z">
+    <test name="Default test" duration-ms="47729" started-at="2019-07-30T12:56:17Z" finished-at="2019-07-30T12:57:04Z">
+      <class name="com.sntf.steps.Frontloginsteps">
+        <test-method status="PASS" signature="Openbrowser_and_hit_url()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="Openbrowser_and_hit_url" is-config="true" duration-ms="9322" started-at="2019-07-30T18:26:17Z" finished-at="2019-07-30T18:26:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SingleQRReader -->
-        <test-method status="PASS" signature="MultipleQRReader()[pri:2, instance:com.sntf.steps.ReadQRCode@4eb7f003]" name="MultipleQRReader" duration-ms="77" started-at="2019-06-03T16:51:07Z" finished-at="2019-06-03T16:51:07Z">
+        </test-method> <!-- Openbrowser_and_hit_url -->
+        <test-method status="PASS" signature="empty_Credentials_Login()[pri:1, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="empty_Credentials_Login" duration-ms="233" started-at="2019-07-30T18:26:26Z" finished-at="2019-07-30T18:26:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MultipleQRReader -->
-      </class> <!-- com.sntf.steps.ReadQRCode -->
+        </test-method> <!-- empty_Credentials_Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="tearDown" is-config="true" duration-ms="188" started-at="2019-07-30T18:26:26Z" finished-at="2019-07-30T18:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Openbrowser_and_hit_url()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="Openbrowser_and_hit_url" is-config="true" duration-ms="10313" started-at="2019-07-30T18:26:26Z" finished-at="2019-07-30T18:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openbrowser_and_hit_url -->
+        <test-method status="PASS" signature="invalid_Password()[pri:2, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="invalid_Password" duration-ms="1802" started-at="2019-07-30T18:26:37Z" finished-at="2019-07-30T18:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Password -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="tearDown" is-config="true" duration-ms="340" started-at="2019-07-30T18:26:39Z" finished-at="2019-07-30T18:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Openbrowser_and_hit_url()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="Openbrowser_and_hit_url" is-config="true" duration-ms="10253" started-at="2019-07-30T18:26:39Z" finished-at="2019-07-30T18:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openbrowser_and_hit_url -->
+        <test-method status="PASS" signature="invalid_Username()[pri:3, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="invalid_Username" duration-ms="1667" started-at="2019-07-30T18:26:49Z" finished-at="2019-07-30T18:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Username -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="tearDown" is-config="true" duration-ms="346" started-at="2019-07-30T18:26:51Z" finished-at="2019-07-30T18:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Openbrowser_and_hit_url()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="Openbrowser_and_hit_url" is-config="true" duration-ms="10608" started-at="2019-07-30T18:26:51Z" finished-at="2019-07-30T18:27:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openbrowser_and_hit_url -->
+        <test-method status="PASS" signature="ValidUser()[pri:4, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="ValidUser" duration-ms="2441" started-at="2019-07-30T18:27:02Z" finished-at="2019-07-30T18:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sntf.steps.Frontloginsteps@371a67ec]" name="tearDown" is-config="true" duration-ms="193" started-at="2019-07-30T18:27:04Z" finished-at="2019-07-30T18:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sntf.steps.Frontloginsteps -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

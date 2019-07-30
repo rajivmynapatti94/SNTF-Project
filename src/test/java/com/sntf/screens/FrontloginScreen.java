@@ -8,9 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import com.sntf.driver.SharedBrowser;
 
 public class FrontloginScreen extends SharedBrowser {
-	
 
-	WebDriver driver;
 
 	public FrontloginScreen(WebDriver ldriver)
 	{

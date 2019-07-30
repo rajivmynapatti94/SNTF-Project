@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import com.sntf.driver.SharedBrowser;
 import com.sntf.driver.SharedProperties;
 
-public class Product_Purchase {
+public class Product_Purchase extends SharedBrowser{
 
 static SharedProperties properties = new SharedProperties();
 
@@ -28,7 +28,7 @@ public static String Password = "indianic";
 			@BeforeMethod
 			public void Openbrowser_and_hit_url() throws IOException, InterruptedException
 			{
-				driver=SharedBrowser.Browser(properties.getfronturl()+"products");
+				Browser(properties.getfronturl()+"products");
 				Thread.sleep(2000);
 				SharedBrowser.capture("A_Product_Page1", driver);
 			}

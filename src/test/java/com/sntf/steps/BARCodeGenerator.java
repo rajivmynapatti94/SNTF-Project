@@ -24,10 +24,10 @@ public class BARCodeGenerator extends SharedBrowser {
 		BitMatrix bitMatrix = new Code128Writer().encode(BAR_CODE_TEXT, BarcodeFormat.CODE_128, 150, 80, null);
 
 		// write the barcode into file system
-		MatrixToImageWriter.writeToStream(bitMatrix, "png", new FileOutputStream(
-				new File(System.getProperty("user.dir") + "/BARCODE-PNG/" + "BARCODE.png")));
+		MatrixToImageWriter.writeToStream(bitMatrix, "png",
+				new FileOutputStream(new File(System.getProperty("user.dir") + "/BARCODE-PNG/" + "BARCODE.png")));
 
-		System.out.println("Code128 Barcode Generated.");
+		System.out.println("CODE128 BARCODE GENERATED.");
 
 	}
 

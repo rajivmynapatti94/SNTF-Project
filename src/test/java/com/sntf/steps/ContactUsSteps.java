@@ -11,14 +11,14 @@ import com.sntf.driver.SharedBrowser;
 import com.sntf.driver.SharedProperties;
 import com.sntf.screens.ContactUsScreen;
 
-public class ContactUsSteps {
+public class ContactUsSteps extends SharedBrowser{
 	static SharedProperties properties = new SharedProperties();
 	
 	@Test
 	
 	public void Contactform() throws AWTException, InterruptedException, IOException {
 		
-		WebDriver driver=SharedBrowser.Browser(properties.getfronturl()+"contactus");
+	Browser(properties.getfronturl()+"contactus");
 		
 		
 		ContactUsScreen contact = PageFactory.initElements(driver, ContactUsScreen.class);
