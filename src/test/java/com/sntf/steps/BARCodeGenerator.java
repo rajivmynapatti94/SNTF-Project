@@ -28,6 +28,8 @@ public class BARCodeGenerator extends SharedBrowser {
 				new FileOutputStream(new File(System.getProperty("user.dir") + "/BARCODE-PNG/" + "BARCODE.png")));
 
 		System.out.println("CODE128 BARCODE GENERATED.");
+		
+		
 
 	}
 
